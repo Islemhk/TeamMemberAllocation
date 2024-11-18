@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,p {
+  text-align: center;
+}
+.card-collection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+  cursor: pointer;
+}
+@media only screen and (max-width:600px){
+  .card-collection{
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .card-collection {
+    grid-template-columns: 1fr 1fr; /* Two columns for screens between 600px and 767px */
+  }
+}
+@media only screen and (min-width: 1177px) {
+  .card-collection {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Two columns for screens between 600px and 767px */
+  }
+}
